@@ -51,9 +51,9 @@
 \ProcessOptions\relax
 \RequirePackage{ifthen,calc,pdfpages}
 \ifistwoside
-  \LoadClass[a4paper,12pt,openright,twoside]{book}
+\LoadClass[a4paper,12pt,openright,twoside]{book}
 \else
-  \LoadClass[a4paper,12pt,openany]{book}
+\LoadClass[a4paper,12pt,openany]{book}
 \fi
 
 
@@ -90,21 +90,21 @@
 \xeCJKsetcharclass{"2E80}{"FFFF}{1}
 
 % ttf字体 (Windows)
-  \newcommand{\installttf}{
-    %%%%   Thesis Fonts
-    \setmainfont{Times New Roman}
-    \setsansfont{Arial}
-    \setmonofont{Courier New}
-    %%%% Using Office Family Fonts
-    \setCJKmainfont[BoldFont={STZhongsong}]{SimSun}
-    \setCJKsansfont{SimHei} % Hei
-    \setCJKmonofont{FangSong_GB2312} % Fangsong
-    %%%% alias
-    \setCJKfamilyfont{song}{SimSun}
-    \setCJKfamilyfont{hei}{SimHei}
-    \setCJKfamilyfont{fs}{FangSong_GB2312} % fang-song
-    \setCJKfamilyfont{kai}{KaiTi} % Kai
-    \setCJKfamilyfont{times}{Times New Roman} % times
+\newcommand{\installttf}{
+	%%%%   Thesis Fonts
+	\setmainfont{Times New Roman}
+	\setsansfont{Arial}
+	\setmonofont{Courier New}
+	%%%% Using Office Family Fonts
+	\setCJKmainfont[BoldFont={STZhongsong}]{SimSun}
+	\setCJKsansfont{SimHei} % Hei
+	\setCJKmonofont{FangSong_GB2312} % Fangsong
+	%%%% alias
+	\setCJKfamilyfont{song}{SimSun}
+	\setCJKfamilyfont{hei}{SimHei}
+	\setCJKfamilyfont{fs}{FangSong_GB2312} % fang-song
+	\setCJKfamilyfont{kai}{KaiTi} % Kai
+	\setCJKfamilyfont{times}{Times New Roman} % times
 }
 
 % otf字体（Adobe）
@@ -126,37 +126,37 @@
 }
 
 \newcommand{\installfz}{
-    %%%% Thesis Fonts
-    \setmainfont{Times New Roman}
-    \setsansfont{Arial}
-    \setmonofont{Courier New}
-    %%%% Using Founder Family Fonts
-    \setCJKmainfont[BoldFont={FZYaSong-DB-GBK}]{FZShuSong_GB18030-Z01}
-    \setCJKsansfont{FZHei-B01} % Hei
-    \setCJKmonofont{FZFangSong-Z02} % fs
-    %%%% alias
-    \setCJKfamilyfont{song}{FZShuSong_GB18030-Z01}
-    \setCJKfamilyfont{hei}{FZHei-B01}
-    \setCJKfamilyfont{fs}{FZFangSong-Z02} % fang-song
-    \setCJKfamilyfont{kai}{FZKai-Z03} % Kai
-    \setCJKfamilyfont{times}{Times New Roman} % times
+	%%%% Thesis Fonts
+	\setmainfont{Times New Roman}
+	\setsansfont{Arial}
+	\setmonofont{Courier New}
+	%%%% Using Founder Family Fonts
+	\setCJKmainfont[BoldFont={FZYaSong-DB-GBK}]{FZShuSong_GB18030-Z01}
+	\setCJKsansfont{FZHei-B01} % Hei
+	\setCJKmonofont{FZFangSong-Z02} % fs
+	%%%% alias
+	\setCJKfamilyfont{song}{FZShuSong_GB18030-Z01}
+	\setCJKfamilyfont{hei}{FZHei-B01}
+	\setCJKfamilyfont{fs}{FZFangSong-Z02} % fang-song
+	\setCJKfamilyfont{kai}{FZKai-Z03} % Kai
+	\setCJKfamilyfont{times}{Times New Roman} % times
 }
 
 \newcommand{\installfandol}{
-    %%%% Windows Thesis Fonts
-    \setmainfont{Times New Roman}
-    \setsansfont{Arial}
-    \setmonofont{Courier New}
-    %%%% Using Fandol Family Fonts
-    \setCJKmainfont{FandolSong}
-    \setCJKsansfont{FandolHei} % Hei
-    \setCJKmonofont{FandolFang} % fs
-    %%%% alias
-    \setCJKfamilyfont{song}{FandolSong}
-    \setCJKfamilyfont{hei}{FandolHei}
-    \setCJKfamilyfont{fs}{FandolFang} % fang-song
-    \setCJKfamilyfont{kai}{FandolKai} % Kai
-    \setCJKfamilyfont{times}{Times New Roman} % times
+	%%%% Windows Thesis Fonts
+	\setmainfont{Times New Roman}
+	\setsansfont{Arial}
+	\setmonofont{Courier New}
+	%%%% Using Fandol Family Fonts
+	\setCJKmainfont{FandolSong}
+	\setCJKsansfont{FandolHei} % Hei
+	\setCJKmonofont{FandolFang} % fs
+	%%%% alias
+	\setCJKfamilyfont{song}{FandolSong}
+	\setCJKfamilyfont{hei}{FandolHei}
+	\setCJKfamilyfont{fs}{FandolFang} % fang-song
+	\setCJKfamilyfont{kai}{FandolKai} % Kai
+	\setCJKfamilyfont{times}{Times New Roman} % times
 }
 
 \ifisttf
@@ -187,11 +187,11 @@
 \def\heiti{\hei}
 \newlength\thu@linespace
 \newcommand{\thu@choosefont}[2]{%
-    \setlength{\thu@linespace}{#2*\real{#1}}%
-    \fontsize{#2}{\thu@linespace}\selectfont}
+	\setlength{\thu@linespace}{#2*\real{#1}}%
+	\fontsize{#2}{\thu@linespace}\selectfont}
 \def\thu@define@fontsize#1#2{%
-    \expandafter\newcommand\csname #1\endcsname[1][\baselinestretch]{%
-    \thu@choosefont{##1}{#2}}}
+	\expandafter\newcommand\csname #1\endcsname[1][\baselinestretch]{%
+		\thu@choosefont{##1}{#2}}}
 \thu@define@fontsize{chuhao}{42bp}
 \thu@define@fontsize{xiaochu}{36bp}
 \thu@define@fontsize{yihao}{26bp}
@@ -231,53 +231,53 @@
 \geometry{top=21mm,bottom=25.5mm,left=30mm,right=30mm}
 \geometry{headheight=9mm,headsep=1mm,footskip=9mm}
 \renewcommand\setheadrule[1]{%
-  \ifdim#1=\z@
-    \let\makeheadrule\@empty
-  \else
-    \def\makeheadrule{%
-    \makebox[0pt][l]{\rule[.2\baselineskip]{\linewidth}{1.5pt}}%
-    \rule{\linewidth}{1.5pt}}%
-  \fi}
+	\ifdim#1=\z@
+	\let\makeheadrule\@empty
+	\else
+	\def\makeheadrule{%
+		\makebox[0pt][l]{\rule[.2\baselineskip]{\linewidth}{1.5pt}}%
+		\rule{\linewidth}{1.5pt}}%
+	\fi}
 \renewpagestyle{plain}{
-\sethead{}{\raisebox{.65\baselineskip}{\songti \wuhao \ifisanon{~}\else{国防科技大学研究生院专业学位\@optionpaperclass{}学位论文}\fi}}{}%
-\setfoot{}{{\songti \wuhao 第~\thepage~页}}{}%
-\headrule%
-\footrule%
+	\sethead{}{\raisebox{.65\baselineskip}{\songti \wuhao \ifisanon{~}\else{国防科技大学研究生院专业学位\@optionpaperclass{}学位论文}\fi}}{}%
+	\setfoot{}{{\songti \wuhao 第~\thepage~页}}{}%
+	\headrule%
+	\footrule%
 }
 \setfootrule{1bp}
 \renewcommand\frontmatter{%
-    \if@openright
-    \cdb
-    \else\clearpage\fi
-    \@mainmatterfalse
-    \pagenumbering{Roman}
-    \pagestyle{plain}}
+	\if@openright
+	\cdb
+	\else\clearpage\fi
+	\@mainmatterfalse
+	\pagenumbering{Roman}
+	\pagestyle{plain}}
 \newcommand\midmatter{%
-    \if@openright\cleardoublepage\else\clearpage\fi
-    \@mainmatterfalse
-    \pagenumbering{roman}
-    \pagestyle{plain}}
+	\if@openright\cleardoublepage\else\clearpage\fi
+	\@mainmatterfalse
+	\pagenumbering{roman}
+	\pagestyle{plain}}
 \renewcommand\mainmatter{%
-    \if@openright\cleardoublepage\else\clearpage\fi
-    \@mainmattertrue
-    \pagenumbering{arabic}
-    \pagestyle{plain}}
+	\if@openright\cleardoublepage\else\clearpage\fi
+	\@mainmattertrue
+	\pagenumbering{arabic}
+	\pagestyle{plain}}
 \renewcommand\backmatter{%
-    \if@openright\cleardoublepage\else\clearpage\fi
-    \titleformat{\chapter}{\filcenter \heiti \sanhao}{附录\,\thechapter\,}{1em}{}
-    \titlecontents{chapter}[0pt]{\vspace{0.25\baselineskip} \heiti \xiaosi[1.25]}
-      {附录\,\thecontentslabel\quad}{}
-      {\hspace{.5em}\titlerule*{.}\contentspage}
-    \@mainmattertrue
-    \pagestyle{plain}}
+	\if@openright\cleardoublepage\else\clearpage\fi
+	\titleformat{\chapter}{\filcenter \heiti \sanhao}{附录\,\thechapter\,}{1em}{}
+	\titlecontents{chapter}[0pt]{\vspace{0.25\baselineskip} \heiti \xiaosi[1.25]}
+	{附录\,\thecontentslabel\quad}{}
+	{\hspace{.5em}\titlerule*{.}\contentspage}
+	\@mainmattertrue
+	\pagestyle{plain}}
 \renewcommand\cleardoublepage{\clearpage\if@openright \ifodd\c@page\else
-  \newpage{}
-  \thispagestyle{plain}
-  \vspace*{\fill}
-  \begin{center}
-  \end{center}
-  \vspace*{\fill}
-  \clearpage\fi\fi%
+	\newpage{}
+	\thispagestyle{plain}
+	\vspace*{\fill}
+	\begin{center}
+	\end{center}
+	\vspace*{\fill}
+	\clearpage\fi\fi%
 }
 
 % 不带页眉页脚的插入空白页
@@ -289,48 +289,48 @@
 	\end{center}
 	\vspace*{\fill}
 	\clearpage\fi\fi}
-	
+
 \titlecontents{chapter}[0pt]{\vspace{0.25\baselineskip} \heiti \xiaosi[1.25]}
-    {第\zhnumber{\thecontentslabel}章\quad}{}
-    {\hspace{.5em}\titlerule*{.}\contentspage}
+{第\zhnumber{\thecontentslabel}章\quad}{}
+{\hspace{.5em}\titlerule*{.}\contentspage}
 \titlecontents{section}[2em]{\songti \xiaosi[1.25]}
-    {\thecontentslabel\quad}{}
-    {\hspace{.5em}\titlerule*{.}\contentspage}
+{\thecontentslabel\quad}{}
+{\hspace{.5em}\titlerule*{.}\contentspage}
 \titlecontents{subsection}[4em]{\songti \xiaosi[1.25]}
-    {\thecontentslabel\quad}{}
-    {\hspace{.5em}\titlerule*{.}\contentspage}
+{\thecontentslabel\quad}{}
+{\hspace{.5em}\titlerule*{.}\contentspage}
 \titlecontents{figure}[0pt]{\songti \xiaosi[1.25]}
-    {\makebox[3.5em][l]{图~\thecontentslabel\quad}}{}
-    {\hspace{.5em}\titlerule*{.}\contentspage}
+{\makebox[3.5em][l]{图~\thecontentslabel\quad}}{}
+{\hspace{.5em}\titlerule*{.}\contentspage}
 \titlecontents{table}[0pt]{\songti \xiaosi[1.25]}
-    {\makebox[3.5em][l]{表~\thecontentslabel\quad}}{}
-    {\hspace{.5em}\titlerule*{.}\contentspage}
+{\makebox[3.5em][l]{表~\thecontentslabel\quad}}{}
+{\hspace{.5em}\titlerule*{.}\contentspage}
 \renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
-                    \thispagestyle{plain}%
-                    \global\@topnum\z@
-                    \@afterindentfalse
-                    \secdef\nudt@chapter\@schapter}
+	\thispagestyle{plain}%
+	\global\@topnum\z@
+	\@afterindentfalse
+	\secdef\nudt@chapter\@schapter}
 \def\nudt@chapter[#1]#2{
-  \ifnum \c@secnumdepth >\m@ne
-    \if@openright\cleardoublepage\else\clearpage\fi
-    \phantomsection
-    \if@mainmatter
-      \refstepcounter{chapter}%
-      \addcontentsline{toc}{chapter}%
-        {\protect\numberline{\thechapter}#1}%
-    \else
-      \addcontentsline{toc}{chapter}{#1}%
-    \fi
-  \else
-    \addcontentsline{toc}{chapter}{#1}%
-  \fi
-  \chaptermark{#1}%
-  \if@twocolumn
-    \@topnewpage[\@makechapterhead{#2}]%
-  \else
-    \@makechapterhead{#2}%
-    \@afterheading
-  \fi
+	\ifnum \c@secnumdepth >\m@ne
+	\if@openright\cleardoublepage\else\clearpage\fi
+	\phantomsection
+	\if@mainmatter
+	\refstepcounter{chapter}%
+	\addcontentsline{toc}{chapter}%
+	{\protect\numberline{\thechapter}#1}%
+	\else
+	\addcontentsline{toc}{chapter}{#1}%
+	\fi
+	\else
+	\addcontentsline{toc}{chapter}{#1}%
+	\fi
+	\chaptermark{#1}%
+	\if@twocolumn
+	\@topnewpage[\@makechapterhead{#2}]%
+	\else
+	\@makechapterhead{#2}%
+	\@afterheading
+	\fi
 }
 \newcommand\cabstractname{摘\hspace{1em}要}
 \newcommand\eabstractname{Abstract}
@@ -339,18 +339,18 @@
 \newcommand\ekeywordsname{Key Words}
 \newcommand\ekeywords[1]{\textsf{\xiaosi \ekeywordsname: #1}}
 \newenvironment{cabstract}{%
-    \chapter{\cabstractname}
-    \xiaosi
-    \@afterheading}
-    {\par\vspace{2em}\par}
+	\chapter{\cabstractname}
+	\xiaosi
+	\@afterheading}
+{\par\vspace{2em}\par}
 \newenvironment{eabstract}{%
-    \chapter{\textsf{\eabstractname}}
-    \xiaosi
-    \@afterheading}
-    {\par\vspace{2em}\par}
+	\chapter{\textsf{\eabstractname}}
+	\xiaosi
+	\@afterheading}
+{\par\vspace{2em}\par}
 \newcommand{\sectionbreak}{%
-\addpenalty{-300}%
-\vspace*{0pt}%
+	\addpenalty{-300}%
+	\vspace*{0pt}%
 }
 \setlength{\topskip}{0pt}
 \setcounter{secnumdepth}{3}
@@ -364,38 +364,38 @@
 \titlespacing{\subsection}{2em}{2ex \@minus 2bp}{2ex \@minus 2bp}
 \titlespacing{\subsubsection}{2em}{1ex \@minus 2bp}{1ex \@minus 2bp}
 \renewcommand\normalsize{%
-\@setfontsize\normalsize{12bp}{12.87bp}%
-\renewcommand{\baselinestretch}{1.3}%
-\setlength\abovedisplayskip{10bp \@minus 1bp}%
-\setlength\abovedisplayshortskip{10bp \@minus 1bp}%
-\setlength\belowdisplayskip{\abovedisplayskip}%
-\setlength\belowdisplayshortskip{\abovedisplayshortskip}%
+	\@setfontsize\normalsize{12bp}{12.87bp}%
+	\renewcommand{\baselinestretch}{1.3}%
+	\setlength\abovedisplayskip{10bp \@minus 1bp}%
+	\setlength\abovedisplayshortskip{10bp \@minus 1bp}%
+	\setlength\belowdisplayskip{\abovedisplayskip}%
+	\setlength\belowdisplayshortskip{\abovedisplayshortskip}%
 }
 \newlength\CJK@twochars
 \def\CJKindent{%
-  \settowidth\CJK@twochars{中国}%
-  \parindent\CJK@twochars}
+	\settowidth\CJK@twochars{中国}%
+	\parindent\CJK@twochars}
 \AtBeginDocument{%
-  \CJKindent\relax
-  \checkparameter\relax
+	\CJKindent\relax
+	\checkparameter\relax
 }
 \setlength{\parskip}{0bp \@minus 1bp}
 \newcommand*{\ziju}[1]{\renewcommand{\CJKglue}{\hskip #1}}
 \newlength\biblabelwd
 \settowidth\biblabelwd{\widthof{[999]}} % Maximum Ref Num = 999
 \renewenvironment{thebibliography}[1]{%
-  \chapter*{\bibname}%
-  \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
-  \begin{enumerate}[label={[\arabic{enumi}]},itemsep=0pt,parsep=0pt,labelindent=\CJK@twochars,labelwidth=\biblabelwd,leftmargin=0pt,itemindent=*,align=left]
-  \@openbib@code%
-  \sloppy\frenchspacing%
-  \clubpenalty4000%
-  \widowpenalty4000%
-  \interlinepenalty4000%
-  \sfcode`\.\@m}
-  {\def\@noitemerr
-    {\@latex@warning{Empty `thebibliography' environment}}%
-     \end{enumerate}\frenchspacing}
+	\chapter*{\bibname}%
+	\@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+	\begin{enumerate}[label={[\arabic{enumi}]},itemsep=0pt,parsep=0pt,labelindent=\CJK@twochars,labelwidth=\biblabelwd,leftmargin=0pt,itemindent=*,align=left]
+		\@openbib@code%
+		\sloppy\frenchspacing%
+		\clubpenalty4000%
+		\widowpenalty4000%
+		\interlinepenalty4000%
+		\sfcode`\.\@m}
+	{\def\@noitemerr
+		{\@latex@warning{Empty `thebibliography' environment}}%
+	\end{enumerate}\frenchspacing}
 \setlength{\floatsep}{12bp}
 \setlength{\intextsep}{12bp}
 \setlength{\textfloatsep}{12bp}
@@ -424,32 +424,32 @@
 \let\thu@LT@array\LT@array
 \def\LT@array{\thu@LT@array}
 \newenvironment{denotation}[1][2.71828cm]{
-    \noindent\vskip-4bp\begin{list}{}%
-    {\vskip-30bp\xiaosi[1.5]
-    \renewcommand\makelabel[1]{\textbf{##1}\hfil}
-    \setlength{\labelwidth}{#1} % 标签盒子宽度
-    \setlength{\labelsep}{0cm} % 标签与列表文本距离
-    \setlength{\itemindent}{0em} % 标签缩进量
-    \setlength{\leftmargin}{\labelwidth+\labelsep+2em} % 左边界
-    \setlength{\rightmargin}{0cm}
-    \setlength{\parsep}{0cm} % 段落间距
-    \setlength{\itemsep}{0cm} % 标签间距
-    \setlength{\listparindent}{0pt} % 段落缩进量
-    \setlength{\topsep}{0pt} % 标签与上文的间距
-}}{\end{list}}
+	\noindent\vskip-4bp\begin{list}{}%
+		{\vskip-30bp\xiaosi[1.5]
+			\renewcommand\makelabel[1]{\textbf{##1}\hfil}
+			\setlength{\labelwidth}{#1} % 标签盒子宽度
+			\setlength{\labelsep}{0cm} % 标签与列表文本距离
+			\setlength{\itemindent}{0em} % 标签缩进量
+			\setlength{\leftmargin}{\labelwidth+\labelsep+2em} % 左边界
+			\setlength{\rightmargin}{0cm}
+			\setlength{\parsep}{0cm} % 段落间距
+			\setlength{\itemsep}{0cm} % 标签间距
+			\setlength{\listparindent}{0pt} % 段落缩进量
+			\setlength{\topsep}{0pt} % 标签与上文的间距
+	}}{\end{list}}
 \newenvironment{ack}{%
-    \chapter*{致\hspace{1em}谢}%
-    \addcontentsline{toc}{chapter}{致谢}%
-    \ifisanon\color{white}\else\relax\fi%
-    \xiaosi%
-    \@afterheading}
-    {\par\vspace{2em}\par}
+	\chapter*{致\hspace{1em}谢}%
+	\addcontentsline{toc}{chapter}{致谢}%
+	\ifisanon\color{white}\else\relax\fi%
+	\xiaosi%
+	\@afterheading}
+{\par\vspace{2em}\par}
 \newenvironment{resume}{%
-    \chapter*{作者在学期间取得的学术成果}
-    \addcontentsline{toc}{chapter}{作者在学期间取得的学术成果}
-    \xiaosi
-    \@afterheading}
-    {\par\vspace{2em}\par}
+	\chapter*{作者在学期间取得的学术成果}
+	\addcontentsline{toc}{chapter}{作者在学期间取得的学术成果}
+	\xiaosi
+	\@afterheading}
+{\par\vspace{2em}\par}
 \newenvironment{reviewinfo}{%
 	\chapter*{公开评阅信息}
 	\addcontentsline{toc}{chapter}{公开评阅信息}
@@ -509,153 +509,153 @@
 \def\optionpaperclassen#1{\def\@optionpaperclassen{#1}}
 \def\optionas#1{\def\@optionas{#1}} % Supervisor
 \ifismaster
-  \optionpaperclass{硕士}
-  \optionpaperclassen{Master}
-  \optionas{Supervisor}
+\optionpaperclass{硕士}
+\optionpaperclassen{Master}
+\optionas{Supervisor}
 \else
-  \optionpaperclass{博士}
-  \optionpaperclassen{Ph.D}
-  \optionas{Supervisor}
+\optionpaperclass{博士}
+\optionpaperclassen{Ph.D}
+\optionas{Supervisor}
 \fi
 \newcommand{\checkparameter}
 {
-  \ifthenelse{\isundefined{\@cosupervisor}}{\cosupervisor{}}{}
-  \ifthenelse{\isundefined{\@encosupervisor}}{\encosupervisor{}}{}
+	\ifthenelse{\isundefined{\@cosupervisor}}{\cosupervisor{}}{}
+	\ifthenelse{\isundefined{\@encosupervisor}}{\encosupervisor{}}{}
 }
 \def\maketitle{%
-  \def\entry##1##2##3{%
-    \multicolumn{##1}{l}{\underline{\hbox to ##2{\hfil##3\hfil}}}
-    }
-  \null
-  \ifisanon%
-  \author{}%
-  \serialno{}%
-  \enauthor{}%
-  \supervisor{}%
-  \cosupervisor{}%
-  \ensupervisor{}%
-  \encosupervisor{}%
-  \else\relax\fi%
-  \pagenumbering{alph}% not display, for print only
-  \thispagestyle{empty}%
-  \begin{center}\leavevmode % 表格环境
-  {\fangsong \wuhao[1.25]%
-	\begin{tabular}{clcll} 
-		\makebox[1.2cm][s]{\ 分类号\ } & \entry{1}{3.2cm}{\@classification} & \hspace*{4.8cm} & 学号 & \entry{1}{3.2cm}{\@serialno} \\[5mm] 
-		\makebox[1.2cm][s]{\ U\ D\ C\ }& \entry{1}{3.2cm}{\@UDC} & \hspace*{4.8cm} & 密级 & \entry{1}{3.2cm}{\@confidentiality} 
-	\end{tabular}
-  }
-  \par
-  \vspace*{2.5cm} %插入空白
-  {\heiti\sanhao \@papertype{}\@optionpaperclass{}学位论文}\\
-  \vspace{12bp}
-  {\cusong\erhao[1.25] \@title \par}%
-  \vspace{45bp} %从WORD中得来
-  {\heiti \sihao
-    \begin{tabular}{cp{8cm}c}
-      \ifismaster
-      \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{硕\hfill{}士\hfill{}生\hfill{}姓\hfill{}名}} &
-      \else
-      \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{博\hfill{}士\hfill{}生\hfill{}姓\hfill{}名}} &
-      \fi
-        {\fs \hfil\raisebox{-3.7ex}[0pt]{\@author}\hfil{}} & \\[3.2ex]
-        \cline{2-2}
-        \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{专\hfill{}业\hfill{}学\hfill{}位\hfill{}类\hfill{}别}} &
-        {\fs \hfil\raisebox{-3.7ex}[0pt]{\@subject}\hfil{}} & \\[3.2ex]
-        \cline{2-2}
-        \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{专\hfill{}业\hfill{}学\hfill{}位\hfill{}领\hfill{}域}} &
-        {\fs \hfil\raisebox{-3.7ex}[0pt]{\@researchfield}\hfil{}} & \\[3.2ex]
-        \cline{2-2}
-        \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{指\hfill{}导\hfill{}教\hfill{}师}} &
-        {\fs \hfil\raisebox{-3.7ex}[0pt]{\@supervisor}\hfil{}} & \\[3.2ex]
-        \cline{2-2}
-%      \ifx\@cosupervisor\@empty\else
-      \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{协\hfill{}助\hfill{}指\hfill{}导\hfill{}教\hfill{}师}} &
-          {\fs \hfil\raisebox{-3.7ex}[0pt]{\@cosupervisor}\hfil{}} & \\[3.2ex]
-          \cline{2-2}
-%      \fi
-    \end{tabular}
-  }
-  \end{center}%
-
-  \par
-  \vfill
-  {\centering \cusong \sanhao \ifisanon{~}\else{国防科技大学研究生院}\fi\\[0.8em]
-    {\@zhdate \par}%
-  }
-  \vspace{1mm}
-  \cdb%
-  \newpage
-  \thispagestyle{empty}%
-
-  \begin{center}\leavevmode
-  \vfill\bfseries 
-  {\bf \erhao[1.25] \@entitle \par   \vfill\vfill\vfill\vfill\vfill}
-  {\bf \sanhao[1.25] %调整与word一致
-  \begin{tabular}{rl}
-    Candidate:\ & {\textsf{\@enauthor}}\\
-    \@optionas{}:\ & {\textsf{\@ensupervisor}}\\
-%    \ifx\@encosupervisor\@empty\else
-      Associate \@optionas{}:\ & {\textsf{\@encosupervisor}} \\
-%    \fi
-  \end{tabular}}
-  \vfill\vfill\vfill\vfill\vfill
-  {\bf \sanhao[1.5] %调整与word一致
-A thesis\\
-Submitted in partial fulfillment of the requirements\\
-for the degree of \@optionpaperclassen{} of \textsf{\@enpapertype}\\
-in \textsf{\@ensubject}\\
-\makebox[\textwidth]{\ifisanon{~}\else{Graduate School of National University of %
-Defense Technology}\fi}\\
-\ifisanon{~}\else{Changsha, Hunan, P.\ R.\ China}\fi\\[5mm]
-~\@endate~
-  }
-  \end{center}\vfill
-  
-\renewcommand{\baselinestretch}{1.5}%
-
-\ifisanon{~}\else{
-  \cdb%
-  \newpage
-  \thispagestyle{empty}
-
-%  \includepdf[pages={1}]{独创性声明.pdf}
-  {\cusong \xiaoer \centering \ziju{12pt} 独创性声明 \par\vspace{0.5cm}}
-  {\fangsong\xiaosi[1.8] %
-本人声明所呈交的学位论文是我本人在导师指导下进行的研究工作及取得的
-研究成果。尽我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其
-他人已经发表和撰写过的研究成果，也不包含为获得国防科技大学或其它教育机
-构的学位或证书而使用过的材料。与我一同工作的同志对本研究所做的任何贡献
-均已在论文中作了明确的说明并表示谢意。\par
-学位论文题目：\vbox{\hbox to11cm{\hfil \the\displaytitle \hfil}
-  \protect\vspace{0.6truemm}\relax
-  \hrule depth0pt height0.15truemm width11cm}\par
-学位论文作者签名：\hrulefill\hrulefill\hrulefill\hrulefill\hrulefill
-  \hfill 日期：\hfill\hfill 年\hfill 月 \hfill 日\hspace{1cm}\par}
-
-  \vspace*{1.4cm}
-  {\cusong \xiaoer \centering 学位论文版权使用授权书\par\vspace{0.5cm}}
-  {\fangsong\xiaosi[1.8] %
-本人完全了解国防科技大学有关保留、使用学位论文的规定。本人授权国防
-科技大学可以保留并向国家有关部门或机构送交论文的复印件和电子文档，允许
-论文被查阅和借阅;可以将学位论文的全部或部分内容编入有关数据库进行检索，
-可以采用影印、缩印或扫描等复制手段保存、汇编学位论文。\par
-（保密学位论文在解密后适用本授权书。）\par
-学位论文题目：\vbox{\hbox to11cm{\hfil \the\displaytitle \hfil}
-  \protect\vspace{0.6truemm}\relax
-  \hrule depth0pt height0.15truemm width11cm}\par
-学位论文作者签名：\hrulefill\hrulefill\hrulefill\hrulefill\hrulefill
-  \hfill 日期：\hfill\hfill 年\hfill 月 \hfill 日\par
-作者指导教师签名：\hrulefill\hrulefill\hrulefill\hrulefill\hrulefill
-  \hfill 日期：\hfill\hfill 年\hfill 月 \hfill 日\par}
-}\fi
-
-  \normalsize % normal, 正文开始
-  \def\@tabular{\wuhao[1.25]\old@tabular} % 之后表格字体使用5号
-  \cdb%
-  \newpage
-  \thispagestyle{empty}
-
+	\def\entry##1##2##3{%
+		\multicolumn{##1}{l}{\underline{\hbox to ##2{\hfil##3\hfil}}}
+	}
+	\null
+	\ifisanon%
+	\author{}%
+	\serialno{}%
+	\enauthor{}%
+	\supervisor{}%
+	\cosupervisor{}%
+	\ensupervisor{}%
+	\encosupervisor{}%
+	\else\relax\fi%
+	\pagenumbering{alph}% not display, for print only
+	\thispagestyle{empty}%
+	\begin{center}\leavevmode % 表格环境
+		{\fangsong \wuhao[1.25]%
+			\begin{tabular}{clcll} 
+				\makebox[1.2cm][s]{\ 分类号\ } & \entry{1}{3.2cm}{\@classification} & \hspace*{4.8cm} & 学号 & \entry{1}{3.2cm}{\@serialno} \\[5mm] 
+				\makebox[1.2cm][s]{\ U\ D\ C\ }& \entry{1}{3.2cm}{\@UDC} & \hspace*{4.8cm} & 密级 & \entry{1}{3.2cm}{\@confidentiality} 
+			\end{tabular}
+		}
+		\par
+		\vspace*{2.5cm} %插入空白
+		{\heiti\sanhao 专业学位硕士学位论文}\\
+		\vspace{12bp}
+		{\cusong\erhao[1.25] \@title \par}%
+		\vspace{45bp} %从WORD中得来
+		{\heiti \sihao
+			\begin{tabular}{cp{8cm}c}
+				\ifismaster
+				\raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{硕\hfill{}士\hfill{}生\hfill{}姓\hfill{}名}} &
+				\else
+				\raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{博\hfill{}士\hfill{}生\hfill{}姓\hfill{}名}} &
+				\fi
+				{\fs \hfil\raisebox{-3.7ex}[0pt]{\@author}\hfil{}} & \\[3.2ex]
+				\cline{2-2}
+				\raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{专\hfill{}业\hfill{}学\hfill{}位\hfill{}类\hfill{}别}} &
+				{\fs \hfil\raisebox{-3.7ex}[0pt]{\@subject}\hfil{}} & \\[3.2ex]
+				\cline{2-2}
+				\raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{专\hfill{}业\hfill{}学\hfill{}位\hfill{}领\hfill{}域}} &
+				{\fs \hfil\raisebox{-3.7ex}[0pt]{\@researchfield}\hfil{}} & \\[3.2ex]
+				\cline{2-2}
+				\raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{指\hfill{}导\hfill{}教\hfill{}师}} &
+				{\fs \hfil\raisebox{-3.7ex}[0pt]{\@supervisor}\hfil{}} & \\[3.2ex]
+				\cline{2-2}
+				%      \ifx\@cosupervisor\@empty\else
+				\raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{协\hfill{}助\hfill{}指\hfill{}导\hfill{}教\hfill{}师}} &
+				{\fs \hfil\raisebox{-3.7ex}[0pt]{\@cosupervisor}\hfil{}} & \\[3.2ex]
+				\cline{2-2}
+				%      \fi
+			\end{tabular}
+		}
+	\end{center}%
+	
+	\par
+	\vfill
+	{\centering \cusong \sanhao \ifisanon{~}\else{国防科技大学研究生院}\fi\\[0.8em]
+		{\@zhdate \par}%
+	}
+	\vspace{1mm}
+	\cdb%
+	\newpage
+	\thispagestyle{empty}%
+	
+	\begin{center}\leavevmode
+		\vfill\bfseries 
+		{\bf \erhao[1.25] \@entitle \par   \vfill\vfill\vfill\vfill\vfill}
+		{\bf \sanhao[1.25] %调整与word一致
+			\begin{tabular}{rl}
+				Candidate:\ & {\textsf{\@enauthor}}\\
+				\@optionas{}:\ & {\textsf{\@ensupervisor}}\\
+				%    \ifx\@encosupervisor\@empty\else
+				Associate \@optionas{}:\ & {\textsf{\@encosupervisor}} \\
+				%    \fi
+		\end{tabular}}
+		\vfill\vfill\vfill\vfill\vfill
+		{\bf \sanhao[1.5] %调整与word一致
+			A thesis\\
+			Submitted in partial fulfillment of the requirements\\
+			for the professional degree of \@optionpaperclassen{} of \textsf{\@enpapertype}\\
+			in \textsf{\@ensubject}\\
+			\makebox[\textwidth]{\ifisanon{~}\else{Graduate School of National University of %
+					Defense Technology}\fi}\\
+			\ifisanon{~}\else{Changsha, Hunan, P.\ R.\ China}\fi\\[5mm]
+			~\@endate~
+		}
+	\end{center}\vfill
+	
+	\renewcommand{\baselinestretch}{1.5}%
+	
+	\ifisanon{~}\else{
+		\cdb%
+		\newpage
+		\thispagestyle{empty}
+		
+		%  \includepdf[pages={1}]{独创性声明.pdf}
+		{\cusong \xiaoer \centering \ziju{12pt} 独创性声明 \par\vspace{0.5cm}}
+		{\fangsong\xiaosi[1.8] %
+			本人声明所呈交的学位论文是我本人在导师指导下进行的研究工作及取得的
+			研究成果。尽我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其
+			他人已经发表和撰写过的研究成果，也不包含为获得国防科技大学或其它教育机
+			构的学位或证书而使用过的材料。与我一同工作的同志对本研究所做的任何贡献
+			均已在论文中作了明确的说明并表示谢意。\par
+			学位论文题目：\vbox{\hbox to11cm{\hfil \the\displaytitle \hfil}
+				\protect\vspace{0.6truemm}\relax
+				\hrule depth0pt height0.15truemm width11cm}\par
+			学位论文作者签名：\hrulefill\hrulefill\hrulefill\hrulefill\hrulefill
+			\hfill 日期：\hfill\hfill 年\hfill 月 \hfill 日\hspace{1cm}\par}
+		
+		\vspace*{1.4cm}
+		{\cusong \xiaoer \centering 学位论文版权使用授权书\par\vspace{0.5cm}}
+		{\fangsong\xiaosi[1.8] %
+			本人完全了解国防科技大学有关保留、使用学位论文的规定。本人授权国防
+			科技大学可以保留并向国家有关部门或机构送交论文的复印件和电子文档，允许
+			论文被查阅和借阅;可以将学位论文的全部或部分内容编入有关数据库进行检索，
+			可以采用影印、缩印或扫描等复制手段保存、汇编学位论文。\par
+			（保密学位论文在解密后适用本授权书。）\par
+			学位论文题目：\vbox{\hbox to11cm{\hfil \the\displaytitle \hfil}
+				\protect\vspace{0.6truemm}\relax
+				\hrule depth0pt height0.15truemm width11cm}\par
+			学位论文作者签名：\hrulefill\hrulefill\hrulefill\hrulefill\hrulefill
+			\hfill 日期：\hfill\hfill 年\hfill 月 \hfill 日\par
+			作者指导教师签名：\hrulefill\hrulefill\hrulefill\hrulefill\hrulefill
+			\hfill 日期：\hfill\hfill 年\hfill 月 \hfill 日\par}
+	}\fi
+	
+	\normalsize % normal, 正文开始
+	\def\@tabular{\wuhao[1.25]\old@tabular} % 之后表格字体使用5号
+	\cdb%
+	\newpage
+	\thispagestyle{empty}
+	
 } % QED
 
 
