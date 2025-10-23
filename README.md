@@ -6,7 +6,7 @@
 - [github上心软的神TomHeaven元老级模板](https://github.com/TomHeaven/nudt_thesis)
   
   这个模板与最新的模板差别不大，自带说明文档，非常有用
-- [小庞2025修改版本](https://github.com/PangZe3/Ping-Pong-Templates/毕业论文模板)
+- [小庞2025修改版本](https://github.com/PangZe3/Ping-Pong-Templates/研究生毕业论文模板)
 
   只需将元老级模板的cls文件替换为这个repo中的cls文件即可，参照2025下发的论文模板修改如下
 
