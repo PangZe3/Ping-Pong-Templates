@@ -3,6 +3,7 @@
 
 
 ## 毕业论文模板
+本仓库只包含cls文件，需要在前人的模板基础上进行替换
 - [github上心软的神TomHeaven元老级模板](https://github.com/TomHeaven/nudt_thesis)
   
   这个模板与最新的模板差别不大，自带说明文档，非常有用
